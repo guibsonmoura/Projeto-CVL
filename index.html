@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilocvl.css">
+    <title>Barbearia CVL</title>
+</head>
+<body>
+    <header >
+        <h1>Barbearia CVL</h1>
+    </header>
+    <br>
+    <br>
+    <h2 id="h2" style="text-align: center; font-size: 45px;">Agende seu Horário</h2>
+    <section>
+        <form action="php/formulario.php" method="POST" id="form1">
+            <br>
+            <div id="id_nome">
+                <label for="input_nome">Digite seu Nome:  </label>
+                <input type="text" name="input_nome" id="input_nome" placeholder="Nome Completo" style="text-align: center;">
+            </div>
+            <br>
+            <br>
+            <div id="id_barbeiro">
+                <label for="">Escolha o Barbeiro:</label>
+                <select  id=""name="select_barbeiro">
+                    <option value=""></option> >--Escolha--</option>
+                    <option value="barbeiro1">Barbeiro1</option>
+                    <option value="barbeiro2">Barbeiro2</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>Dias Disponíveis</h2>
+            <br>
+            <br>
+            <div id="id_dia">
+                <div class="class_dia_semana">
+                    <label for="dia_semana">###</label>
+                    <input type="radio" name="dia_semana" id="dia_semana" checked>
+                </div>
+                <div class="class_dia_semana">
+                    <label for="dia_semana">###</label>
+                <input type="radio" name="dia_semana" id="dia_semana">
+                </div>
+                <div class="class_dia_semana">
+                    <label for="dia_semana">###</label>
+                    <input type="radio" name="dia_semana" id="dia_semana">
+                </div>
+                
+            </div>
+            
+            <h2>Escolha seu Horário</h2>
+            <br>
+            <br>
+           
+            <div id="id_horario">
+                
+                <fieldset id="fieldset_manha">
+                    <legend>Manhã</legend>
+                    <div>
+                        <input type="button" value="07:00" id="sete_horas" name="sete_horas"  class="btn-hour">
+                    
+                        <input type="button" value="07:30" id = "sete_meia" class="btn-hour">
+                    </div>
+                    
+                    <div>
+                        <input type="button" id="oito" value="08:00" class="btn-hour" > 
+
+                        <input type="button" id="oito_meia" value="08:30" class="btn-hour" ">
+                    </div>
+                    
+                    <div>
+                        <input type="button" id="nove" value="09:00" class="btn-hour" "> 
+                        
+                        <input type="button" id="nove_meia" value="09:30" class="btn-hour"> 
+                    </div>
+                    
+                    <div>
+                        <input type="button" id = 'dez'value="10:00" class="btn-hour" > 
+                        
+                        <input type="button"id="dez_meia" value="10:30" class="btn-hour" > 
+                    </div>
+                    
+                    <div>
+                        <input type="button" id="onze" value="11:00" class="btn-hour"> 
+                        
+                        <input type="button" id="onze_meia" value="11:30" class="btn-hour" >
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset id="fieldset_tarde">
+                    <legend>Tarde</legend>
+                    <div>
+                        <input type="button" id="duas" value="14:00" class="btn-hour">
+    
+                        <input type="button" id="duas_meia"value="14:30" class="btn-hour"> 
+                    </div>
+                    <div>
+                        <input type="button" id="tres" value="15:00" class="btn-hour"> 
+                        
+                        <input type="button" id="tres_meia" value="15:30" class="btn-hour"> 
+                    </div>                    
+                    <div>
+                        <input type="button" id="quatro" value="16:00" class="btn-hour"> 
+
+                        <input type="button" id="quatro_meia" value="16:30"class="btn-hour"> 
+                    </div>
+                    <div>
+                        <input type="button" id="cinco" value="17:00" class="btn-hour"> 
+                        
+                        <input type="button" id="cinco_meia" value="17:30" class="btn-hour"> 
+                    </div>
+                    <div>
+                        <input type="button" id="seis"value="18:00" class="btn-hour"> 
+
+                        <input type="button" id="seis_meia" value="18:30" class="btn-hour"> 
+                    </div>
+                    
+                </fieldset>
+            </div>
+            <br>
+            <br>
+            <h2>Selecione o Procedimento</h2>
+            <div id="id_procedimento">
+                
+                <br>
+                <br>
+                <br>
+                <label for="corte_cabelo">Cabelo <input type="button" name="corte_cabelo" class="class_procedimento"></label>
+                <br>
+                <br>
+                <label for="corte_barba">Barba <input  type="button" name="corte_barba" class="class_procedimento"></label>
+                
+                <br>
+                <br>
+                
+                <label for="sobrancelha">Sobrancelha <input type="button" name="sobrancelha" class="class_procedimento"></label>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <input type="submit" value="Agendar" name="agendar">
+        </form>
+    </section>
+    <footer>
+        <p style="text-align: center;">&copy; Developed by NortApp</p>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/formulario.js"></script> 
+   
+    
+</body>
+</html>
